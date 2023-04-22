@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutImg from "../assests/images/412.jpg"
 import Navbar from './Navbar';
-
+import cv from "../assests/cv.pdf";
 const About = () => {
     const info = [
         { text: "Years experience", count: "01" },
@@ -9,14 +9,21 @@ const About = () => {
         { text: "Companies Work", count: "00" },
       ];
     
-       const handleDownloadClick =()=>{
-        const fileUrl = "/src/assets/cv.pdf";
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        link.setAttribute('download', true);
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+      const handleDownloadClick =()=>{
+        const fileUrl = {cv};
+        const filename = 'cv.pdf'
+        fetch(fileUrl)
+        .then(res => res.blob())
+        .then(blob => {
+          const fileUrl = window.URL.createObjectURL(
+            new Blob([blob]),
+          );
+          const a = document.createElement('a');
+          a.href = fileUrl;
+          a.download = filename;
+          a.click();
+          window.URL.revokeObjectURL(fileUrl);
+        })
       }
     return (
         <section id="about" className="py-10 text-white">

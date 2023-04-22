@@ -26,7 +26,7 @@ const Navbar = (props) => {
         <div className="mx-7">
           <button
             onClick={props.onClick}
-            className="btn btn-outline btn-accent text-2xl bg-cyan-600"
+            className="btn btn-outline btn-info text-2xl "
           >
             RESUME
           </button>
