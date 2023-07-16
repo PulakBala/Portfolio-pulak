@@ -1,24 +1,26 @@
 
+
 import './App.css';
 import About from './Components/About';
-import Bot from './Components/Bot';
-import CompareImage from './Components/CompareImage';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
 import Skills from './Components/Skills';
 import SocialLinks from './Components/SocialLinks';
+import ParticlesBackground from './Components/ParticlesBackground';
+import Projects from './Components/Projects';
 
 function App() {
+  
   return (
     <div className="App">
+     <ParticlesBackground/>
      <Navbar/>
-     <Bot/>
-     <CompareImage/>
      <Hero/>
      <About/>
      <Skills/>
+     <Projects/>
      <Contact/>
      <Footer/>
      <SocialLinks/>

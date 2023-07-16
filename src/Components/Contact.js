@@ -12,8 +12,8 @@ const Contact = () => {
       ];
 
     return (
-         <section id="contact" className="py-10 px-3 text-white">
-      <div className="text-center mt-8">
+         <section id="contact" className="py-10 px-3 text-white z-40">
+      <div className="text-center mt-8 z-40">
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-cyan-600">Me</span>
         </h3>
@@ -23,7 +23,7 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form className="flex flex-col flex-1 gap-5">
+          <form className="flex flex-col flex-1 gap-5 z-40">
             <input type="text" placeholder="Your Name" />
             <input type="Email" placeholder="Your Email Address" />
             <textarea placeholder="Your Message" rows={10}></textarea>

@@ -33,7 +33,7 @@ const SocialLinks = () => {
         }
     ]
     return (
-        <div className=" flex-col top-[35%] left-0 fixed">
+        <div className=" flex-col top-[35%] left-0 fixed z-50">
         {
             links.map((link) =>(
                 <li 

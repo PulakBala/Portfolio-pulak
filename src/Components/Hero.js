@@ -10,11 +10,11 @@ const Hero = () => {
     return (
         <section
       id="home"
-      className="min-h-screen flex py-10 md:flex-row flex-col items-center"
+      className="min-h-screen flex py-10 md:flex-row flex-col items-center bg-slate-900 z-40"
     >
       
       <div className="flex-1 flex items-center justify-center mt-10">
-        <img src={hero1} alt="" className="md:w-2/3 h-full object-cover bg-cyan-500 rounded-3xl" />
+        <img src={hero1} alt="" className="md:w-2/3 h-full object-cover bg-cyan-900 rounded-3xl  z-40" />
 
         
       </div>

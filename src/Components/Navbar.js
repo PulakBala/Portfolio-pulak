@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import resume from "../assests/pulak.pdf"
 
 const Navbar = (props) => {
   const [sticky, setSticky] = useState(false);
@@ -24,11 +25,15 @@ const Navbar = (props) => {
     >
       <div className="flex items-center justify-between">
         <div className="mx-7">
-          <button
-            onClick={props.onClick}
-            className="btn btn-outline btn-info text-2xl "
-          >
-            RESUME
+          <button className="btn btn-outline btn-info text-2xl">
+            <a
+             href={resume}
+             download="Pulak_cv"
+             target="blank"
+             rel ="noreferrer"
+            >
+              RESUME
+            </a>
           </button>
         </div>
         <div
